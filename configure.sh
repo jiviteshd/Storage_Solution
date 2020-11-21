@@ -9,4 +9,6 @@ sudo rm -fr /etc/dnsmasq.conf
 sudo mv dnsmasq.conf /etc/dnsmasq.conf
 sudo rfkill unblock wlan
 sudo mv hostapd.conf /etc/hostapd/hostapd.conf
+sudo rm -fr /etc/rc.local
+sudo mv rc.local /etc/rc.local
 sudo systemctl reboot
