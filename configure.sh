@@ -1,7 +1,7 @@
 sudo systemctl unmask hostapd
 sudo systemctl enable hostapd
 sudo rm /etc/dhcpcd.conf
-sudo mv dhcpd.conf /etc/dhcpd.conf
+sudo mv dhcpcd.conf /etc/dhcpcd.conf
 sudo rm -fr /etc/sysctl.d/routed-ap.conf
 sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 sudo netfilter-persistent save
