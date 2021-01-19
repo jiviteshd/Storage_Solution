@@ -13,4 +13,5 @@ sudo rm -fr /etc/rc.local
 sudo mv rc.local /etc/rc.local
 sudo rm -fr /etc/samba/smb.conf
 sudo mv smb.config /etc/samba/smb.conf
+sudo sampasswd -a pi
 sudo systemctl reboot
